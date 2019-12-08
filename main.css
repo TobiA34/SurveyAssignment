@@ -1,0 +1,594 @@
+/* CSS RESET **/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/** GENERAL STYLES **/
+body {
+    margin: 0;
+    background: #4af2a1;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    overflow-x: hidden;
+}
+#website-name{
+    text-align: center;
+    padding: 10px;
+    font-size: 75px;
+    font-family: budmo;
+}
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td , th,tr{
+    border: 1px solid #dddddd;
+    padding: 4px;
+    color: white;
+}
+
+
+
+h2{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.nav{
+    font-size: 25px;
+    padding-top: 40px;
+    padding-left: 600px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+.nav a{
+    color: white;
+    margin: 0 auto;
+}
+.nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+#website-logo {
+    width: 190px;
+    height: 190px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+.intro-header {
+    text-align: center;
+}
+.intro-header h2 {
+    display: inline-block;
+    border-bottom: 3px solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+/* ABOUT PAGE STYLES*/
+
+#about-website {
+    width: 60%;
+}
+#about-content-container {
+    background: black;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#about-content-container .courseworkContent {
+    float: left;
+    border-radius: 10px;
+    margin: 0 2.5% 0 2.5%;
+    margin-bottom: 10px;
+}
+#about-website-introduction{
+    background:goldenrod;
+    width:80%;
+    margin: 40px auto 0 auto;
+    border-radius: 10px;
+}
+#about-website-introduction p{
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+}
+#about-website-introduction h2{
+    color: white;
+}
+#features{
+    background:goldenrod;
+    width:80%;
+    margin: 40px auto 0 auto;
+    border-radius: 10px;
+}
+#features p{
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+}
+#features h2{
+    color: white;
+}
+
+/*SIGN IN PAGE STLYES*/
+
+#sign-in-form {
+    padding-left: 450px;
+    padding-top: 20px;
+    font-size: 25px;
+}
+#Sign-in-container {
+    background-color: #1f2833;
+    height: 900px;
+}
+form {
+    padding-top: 50px;
+}
+input {
+    font-size:20px;
+    padding: 20px;
+}
+.border{
+    width: 900px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: yellow;
+    margin-left: 20px;
+}
+.textfield {
+    width: 800px;
+    padding-top: 0px;
+}
+.button {
+    padding: 10px;
+ }
+
+/*STYLES FOR SIGN UP PAGE*/
+
+#container-for-sign-up{
+    background-color: #181d23;
+    height: 950px;
+    padding: 10px;
+}
+#sign-up-form {
+    padding-top: 0px;
+    font-size: 35px;
+    margin: 0 auto;
+}
+#border-for-sign-up-form{
+    width: 900px;
+    padding: 5px;
+    background-color: yellow;
+    margin: 0 auto;
+}
+
+.select{
+    font-size: 35px;
+    margin: 20px;
+}
+
+/*COMPETITORS PAGE STYLE */
+
+ul{
+    color: #ffffff;
+    padding: 10px ;
+}
+li {
+    list-style-position: inside
+}
+img{
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,minmax(5px,auto)) ;
+    grid-gap: 50px;
+    padding: 10px;
+    text-align: center;
+}
+.content div {
+    background: #1f2833;
+    padding: 30px;
+    padding: 10px;
+}
+.content div:nth-child(even){
+    background: #777;
+}
+.content p {
+    color: white;
+    font-size: 25px;
+}
+.content h2 {
+    color: white;
+    font-size: 30px;
+}
+.content li{
+    font-size: 25px;
+    margin: 10px;
+}
+
+#survey_monkey_content {
+    background-color: gold;
+}
+
+#smart_survey_content {
+    background-color: blue;
+}
+#google_content{
+    background-color: navajowhite;
+}
+
+/*ACCOUNT PAGE STYLE*/
+#container-for-update_account{
+    background-color:black;
+    height: 900px;
+}
+
+#username{
+    margin-top: 10px;
+}
+#update-form {
+    padding-top: 10px;
+    font-size: 30px;
+    margin: 0 auto;
+}
+#border-for-update-form{
+    width: 900px;
+    padding: 20px 20px 20px 20px;
+    background-color: goldenrod;
+    margin: 0 auto;
+}
+#account_image{
+    height: 100px;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+#container-for-my-account{
+    background-color: black;
+    height: 960px;
+}
+#my_account {
+    padding-top: 10px;
+    font-size: 35px;
+    margin: 0 auto;
+}
+#border-for-my_account{
+    width: 900px;
+    padding: 10px;
+    background-color: goldenrod;
+    margin: 100px auto;
+}
+#border-for-my_account p{
+    color: white;
+    padding: 5px;
+}
+.center{
+    margin: 0 auto;
+    color: white;
+    font-size: 50px;
+}
+
+
+/*SURVEY PAGE STYLE */
+.survey_container{
+  width: 100%;
+    background-color: #4D4E4F;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 20px;
+ }
+
+ .survey_title{
+   text-align: center;
+   color: white;
+   font-size: 42px;
+ }
+
+ .multiple_choice_container{
+   width: 50%;
+     background-color: #e0c56e;
+     margin: 0 auto;
+     margin-top: 10px;
+     padding: 10px;
+     border-radius: 25px;
+ }
+
+ .multiple_choice_title{
+   color: white;
+ }
+
+ .multiple_choice_form{
+   margin-left: 45%;
+ }
+
+ .radio_container{
+     width: 50%;
+     background-color: #e0c56e;
+     margin: 0 auto;
+     margin-top: 10px;
+     padding: 10px;
+     border-radius: 25px;
+ }
+
+ .radio_title{
+   color: white;
+ }
+
+ .radio_choice_form{
+   margin-left: 45%;
+ }
+
+ .radio_label{
+   color: white;
+   font-size: 30px;
+ }
+
+ .text_entry_container{
+   width: 50%;
+   background-color: #e0c56e;
+   margin: 0 auto;
+   margin-top: 10px;
+   padding: 10px;
+   border-radius: 25px;
+ }
+
+ .text_entry_title{
+   color: white;
+ }
+
+ .text_entry_form{
+   margin-left: 40%;
+ }
+
+.text_area_container{
+    width: 50%;
+    background-color: #e0c56e;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.text_area_title{
+    color: white;
+}
+
+.text_area_form{
+    margin-left: 40%;
+}
+
+ .number_input_container{
+   width: 50%;
+   background-color: #e0c56e;
+   margin: 0 auto;
+   margin-top: 10px;
+   padding: 10px;
+   border-radius: 25px;
+ }
+
+ .number_input_title{
+   color: white;
+ }
+
+ .number_input_form{
+   margin-left: 40%;
+ }
+
+.slider_container{
+    width: 50%;
+    background-color: #e0c56e;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.slider_title{
+    color: white;
+}
+
+.slider_form{
+    margin-left: 40%;
+}
+
+ /*ADMIN PAGE STYLE*/
+#add_new_user_container{
+    width: 50%;
+    background-color: #e0c56e;
+    margin: 10px auto;
+     height: 600px;
+    border-radius: 25px;
+ }
+
+#image_container{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+#user_png{
+    /*margin: 0 auto;*/
+    width: 400px;
+    height: 400px;
+    margin-left: 5%;
+    padding:20px;
+}
+
+#file_png{
+    /*margin: 0 auto;*/
+    width: 300px;
+    height: 300px;
+    margin-left: 5%;
+    padding:20px;
+}
+
+#add_user_link{
+    color: white;
+    margin-top: 50px;
+    padding-left: 40%;
+    font-size: 25px;
+}
+#manage_user_table{
+    background-color: #e0c56e;
+}
+
+#admin_page_container{
+    width: 100%;
+    background-color: #777777;
+}
+
+#admin_page_table_style{
+    background-color: #e0c56e;
+}
+
+.section_title{
+    font-size: 45px;
+    margin-left: 45%;
+    color: white;
+}
+/*SURVEY LIST  STYLE*/
+
+#survey_list_container{
+    width: 50%;
+    background-color: #e0c56e;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 600px;
+    border-radius: 25px;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.text{
+    color: white;
+}
+
+/*Custom SURVEY*/
+.survey_custom_survey_form{
+    width: 100%;
+    background-color: #4D4E4F;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.center_form_box{
+    height: 30px;
+    margin-left: 25%;
+    width: 400px;
+}
+
+.center_paragraph_box{
+    height: 30px;
+    margin-left: 25%;
+    width: 400px;
+}
+
+#toolbar{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    background-color: black;
+    margin-left: 85%;
+    margin-top: -100px;
+}
+
+#add_survey_btn{
+    width: 60px;
+    height: 60px;
+    margin-left: 20%;
+    margin-top: 10px;
+
+}
+
+.center_button{
+    height: 50px;
+    width: 200px;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+
+#select_choice{
+    margin-left: 45%;
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+}
+
+#paragraph_form{
+    margin-left: 25%;
+    font-size: 25px;
+}
+
+.custom_survey_container{
+    width: 50%;
+    background-color: #e0c56e;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.button_style{
+    margin-left: 47%;
+    margin-top: 20px;
+}
+
+#next_page{
+    height:80px;
+    width:105px;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#back_page_button{
+    height:80px;
+    width:105px;
+    margin-left: 7%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/*Custom SURVEY*/
+#survey_title{
+
+    font-size: 45px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*FOOTER  STYLE*/
+#footer {
+    background-color:#4af2a1;
+    text-align: center;
+    overflow-x: hidden;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+#footer{
+    color: white;
+}

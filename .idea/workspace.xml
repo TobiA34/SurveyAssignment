@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c440354-071a-4374-ab19-f14a92f77c6b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/._inspectionProfiles" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/._misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/._modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/._skeleton-SC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/._vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/._workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/WebAssignment.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/google_form_layout.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/google_form_layout.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/google_form_question_types.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/google_form_question_types.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/smart_survey_layout.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/smart_survey_layout.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account_set.php" beforeDir="false" afterPath="$PROJECT_DIR$/account_set.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/competitors.php" beforeDir="false" afterPath="$PROJECT_DIR$/competitors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/create_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign_in.php" beforeDir="false" afterPath="$PROJECT_DIR$/sign_in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign_out.php" beforeDir="false" afterPath="$PROJECT_DIR$/sign_out.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign_up.php" beforeDir="false" afterPath="$PROJECT_DIR$/sign_up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/surveys_manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/surveys_manage.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1TLoAbdAQpv4ZxWapRQCPykMqhC" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c440354-071a-4374-ab19-f14a92f77c6b" name="Default" comment="" />
+      <created>1568122381360</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568122381360</updated>
+      <workItem from="1568122383669" duration="2070000" />
+      <workItem from="1568124768416" duration="130000" />
+      <workItem from="1568124954802" duration="27000" />
+      <workItem from="1568125067312" duration="13000" />
+      <workItem from="1573248596427" duration="5380000" />
+      <workItem from="1573295643052" duration="4566000" />
+      <workItem from="1573378008033" duration="1219000" />
+      <workItem from="1573392671571" duration="1193000" />
+      <workItem from="1574016843904" duration="6862000" />
+      <workItem from="1574092886052" duration="459000" />
+      <workItem from="1574094401883" duration="1342000" />
+      <workItem from="1574276807136" duration="3117000" />
+      <workItem from="1574280773948" duration="1355000" />
+      <workItem from="1574360784703" duration="12410000" />
+      <workItem from="1574422378260" duration="7601000" />
+      <workItem from="1574446047630" duration="620000" />
+      <workItem from="1574768000376" duration="8646000" />
+      <workItem from="1574858973948" duration="16075000" />
+      <workItem from="1574951089079" duration="1072000" />
+      <workItem from="1575042100833" duration="3442000" />
+      <workItem from="1575128715173" duration="1931000" />
+      <workItem from="1575200161451" duration="6227000" />
+      <workItem from="1575394912905" duration="18146000" />
+      <workItem from="1575564383260" duration="10437000" />
+      <workItem from="1575722139919" duration="17160000" />
+      <workItem from="1575810638300" duration="10433000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
