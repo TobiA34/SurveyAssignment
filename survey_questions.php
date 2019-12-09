@@ -100,7 +100,7 @@ if ($showQuestionForm)
     <div class="custom_survey_container">
         <h2>Set survey question</h2>
         <form action="survey_questions.php" method="POST">
-            <input name="survey_question" class="center_form_box" type = text required maxlength="200" value="$survey_question">
+            <input name="survey_question" class="center_form_box" type = text maxlength="200" value="hhhbhbhbh">
             <br>
             <br>
     </div>
@@ -122,28 +122,28 @@ if ($showQuestionForm)
 _END;
 }
 
-if (isset($_POST['submit_question'])){
-     echo "$survey_question";
-    // Do some insert into the database table
-//    if(!$connection)
-//    {
-//        die("Connection failed: " . $mysqli_connect_error);
-//    }
-//    else
-//    {
-//        $sql = "INSERT INTO survey_question (title) VALUES ('$title')";
-//        $result = mysqli_query($connection, $sql);
-//    }
-//    if ($result)
-//    {
-//        // show a successful signup message:
-//        $message = "title,instructions added to database<br>";
-//    }
-//    else
-//    {
-//        $message = "title,instructions not added to the database<br>";
-//    }
-}
+//if (isset($_POST['submit_question'])){
+//     echo "$survey_question";
+//    // Do some insert into the database table
+////    if(!$connection)
+////    {
+////        die("Connection failed: " . $mysqli_connect_error);
+////    }
+////    else
+////    {
+////        $sql = "INSERT INTO survey_question (title) VALUES ('$title')";
+////        $result = mysqli_query($connection, $sql);
+////    }
+////    if ($result)
+////    {
+////        // show a successful signup message:
+////        $message = "title,instructions added to database<br>";
+////    }
+////    else
+////    {
+////        $message = "title,instructions not added to the database<br>";
+////    }
+//}
 
 if (isset($_POST['add_question'])){
 
@@ -192,48 +192,71 @@ if(isset($_POST['create_survey'])) {
             // INSERT INTO survey(`title`, `instructions`, `survey_type_id`, `user_id`) VALUES ("Adsda","Make sure you fill in the database",1,"mandyb")
            $insertNewSuveryQuerySql = "INSERT INTO survey(title, instructions, survey_type_id, user_id) VALUES (" . "'" . $survey_title . "'," . "'" . $survey_instructions . "'," . $survey_type_fk_id . ",'" . $userId . "')";
 
-           // Execute the insert into the survey
+            // Execute the insert into the survey
            mysqli_query($connection, $insertNewSuveryQuerySql);
 
+
            // Get the survey id based on the title, store in a variable
+            $getSurveyId = "SELECT id FROM survey WHERE title = " . "'" . $survey_obj->getTitle() ."'";
+            $surveyIdResult = mysqli_query($connection, $getSurveyId);
+            $surveyIdRows = mysqli_num_rows($surveyIdResult);
 
-           //
+            if($surveyIdRows > 0) {
+
+                $surveyIdValue = mysqli_fetch_assoc($surveyIdResult);
+
+                $survey_fk_id = $surveyIdValue["id"];
+
+                var_dump($survey_fk_id);
+
+                // Create the query to insert
+
+                // INSERT INTO `survey_question`(`title`, `survey_id`) VALUES ("ddsas", 2)
+                $questions = $survey_obj->getQuestions();
+                for($i = 0; $i < count($questions); $i++){
+
+                    $question = $questions[$i];
+                    var_dump($question);
+
+                    $insertNewSurveyQuestionsSql = "INSERT INTO survey_question(title,survey_id) VALUES(" . "'" . $question . "'," . $survey_fk_id .")";
+
+                    mysqli_query($connection, $insertNewSurveyQuestionsSql);
+
+                }
+
+                header('Location:show_survey.php');
 
 
-           // var_dump($survey_obj->getQuestions());
-
-
+            }
         }
-
-
     }
 }
 
 
-function getID($dbhost, $dbuser, $dbpass, $dbname)
-{
-
-   $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-    if (!$connection)
-    {
-        die("Connection failed: " . $mysqli_connect_error);
-    }
-
- // Check connection
-    $query = "SELECT username FROM users WHERE username ='admin'";
-    $result = mysqli_query($connection, $query);
-    $n = mysqli_num_rows($result);
-
-if ($n > 0) {
-    for ($i = 0; $i < $n; $i++) {
-        // fetch one row as an associative array (elements named after columns):
-        $row = mysqli_fetch_assoc($result);
-        // set the size of the bar to plot based upon number of votes versus total votes
-        echo "'{$row['username']}'";
-    }
-}
-
-}
+//function getID($dbhost, $dbuser, $dbpass, $dbname)
+//{
+//
+//   $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+//    if (!$connection)
+//    {
+//        die("Connection failed: " . $mysqli_connect_error);
+//    }
+//
+// // Check connection
+//    $query = "SELECT username FROM users WHERE username ='admin'";
+//    $result = mysqli_query($connection, $query);
+//    $n = mysqli_num_rows($result);
+//
+//if ($n > 0) {
+//    for ($i = 0; $i < $n; $i++) {
+//        // fetch one row as an associative array (elements named after columns):
+//        $row = mysqli_fetch_assoc($result);
+//        // set the size of the bar to plot based upon number of votes versus total votes
+//        echo "'{$row['username']}'";
+//    }
+//}
+//
+//}
 
 
 

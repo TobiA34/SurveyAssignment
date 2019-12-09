@@ -109,7 +109,7 @@ _END;
 
 		}
 		else{
-			$query = "INSERT INTO temSurvey(answer) VALUES ('$consoleChoice','$rangeValue','$numberValue','$textValue','$textValue2')";
+			$query = "INSERT INTO temp_Survey(answer) VALUES ('$consoleChoice','$rangeValue','$numberValue','$textValue','$textValue2')";
 		}
 		if (mysqli_query($connection, $query)) {
 			echo "Saved survey";

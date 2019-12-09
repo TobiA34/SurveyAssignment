@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c440354-071a-4374-ab19-f14a92f77c6b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/._inspectionProfiles" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/._misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/._modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/._skeleton-SC.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/._vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/._workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/WebAssignment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/google_form_layout.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/google_form_layout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/google_form_question_types.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/google_form_question_types.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/smart_survey_layout.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/smart_survey_layout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account_set.php" beforeDir="false" afterPath="$PROJECT_DIR$/account_set.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/competitors.php" beforeDir="false" afterPath="$PROJECT_DIR$/competitors.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/create_data.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_in.php" beforeDir="false" afterPath="$PROJECT_DIR$/sign_in.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_out.php" beforeDir="false" afterPath="$PROJECT_DIR$/sign_out.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_up.php" beforeDir="false" afterPath="$PROJECT_DIR$/sign_up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/survey_questions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/surveys_manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/surveys_manage.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,7 +93,7 @@
       <workItem from="1575394912905" duration="18146000" />
       <workItem from="1575564383260" duration="10437000" />
       <workItem from="1575722139919" duration="17160000" />
-      <workItem from="1575810638300" duration="10433000" />
+      <workItem from="1575810638300" duration="26700000" />
     </task>
     <servers />
   </component>

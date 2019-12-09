@@ -35,7 +35,7 @@ if (isset($_SESSION['loggedInSkeleton']) && ($_SESSION['username']=='admin')) {
         <div><fieldset><legend><h2>Admin Tools</h2></legend><table id="admin_page_table_style">
         <tr><td align="center" width="90"><a href="admin_users.php"><img width="59" src="Images/boy.png"></a></td><td align="left"> <a href="admin_users.php"><p class="section_title">USERS</p></a></td></tr>
         <tr><td align="center" width="90"><a href="survey_List.php"><img width="59" src="Images/clipboard.png"></a></td><td align="left"><a href="survey_List.php"><p class="section_title">SURVEY</p></a></td></tr>
-        <tr><td align="center" width="90"><a href="graphs.php"><img width="59" src="Images/graphs.png"></a></td><td align="left"><a href="admin_dash.php"><p class="section_title">Graphs</p></a></td></tr>
+        <tr><td align="center" width="90"><a href="Graphs.php"><img width="59" src="Images/graphs.png"></a></td><td align="left"><a href="Graphs.php"><p class="section_title">Graphs</p></a></td></tr>
         </table></fieldset></div>
 _END;
 }

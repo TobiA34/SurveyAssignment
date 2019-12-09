@@ -45,7 +45,7 @@ if (isset($_SESSION['loggedInSkeleton']))
 			<a href="custom_survey_page.php">Custom survey</a> ||
 			<a href='sign_out.php'>Sign Out ({$_SESSION['username']})</a>
 		   </div>
-		_END;
+_END;
 	}
 	else{
 		echo <<<_END
@@ -66,7 +66,7 @@ if (isset($_SESSION['loggedInSkeleton']))
 		<a href="custom_survey_page.php">Custom survey</a>||
 		<a href='sign_out.php'>Sign Out ({$_SESSION['username']})</a>
 		</div>
-		_END;
+_END;
 	}
 }
 
