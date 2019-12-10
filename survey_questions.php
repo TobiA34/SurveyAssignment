@@ -100,7 +100,7 @@ if ($showQuestionForm)
     <div class="custom_survey_container">
         <h2>Set survey question</h2>
         <form action="survey_questions.php" method="POST">
-            <input name="survey_question" class="center_form_box" type = text maxlength="200" value="hhhbhbhbh">
+            <input name="survey_question" class="center_form_box" type = text maxlength="200" value="">
             <br>
             <br>
     </div>
@@ -190,6 +190,7 @@ if(isset($_POST['create_survey'])) {
             $userId = $_SESSION['username'];
 
             // INSERT INTO survey(`title`, `instructions`, `survey_type_id`, `user_id`) VALUES ("Adsda","Make sure you fill in the database",1,"mandyb")
+
            $insertNewSuveryQuerySql = "INSERT INTO survey(title, instructions, survey_type_id, user_id) VALUES (" . "'" . $survey_title . "'," . "'" . $survey_instructions . "'," . $survey_type_fk_id . ",'" . $userId . "')";
 
             // Execute the insert into the survey
@@ -212,13 +213,15 @@ if(isset($_POST['create_survey'])) {
                 // Create the query to insert
 
                 // INSERT INTO `survey_question`(`title`, `survey_id`) VALUES ("ddsas", 2)
+
                 $questions = $survey_obj->getQuestions();
+
                 for($i = 0; $i < count($questions); $i++){
 
                     $question = $questions[$i];
-                    var_dump($question);
+//                    var_dump($question);
 
-                    $insertNewSurveyQuestionsSql = "INSERT INTO survey_question(title,survey_id) VALUES(" . "'" . $question . "'," . $survey_fk_id .")";
+                     $insertNewSurveyQuestionsSql = "INSERT INTO survey_question(title,survey_id) VALUES(" . "'" . $question . "'," . $survey_fk_id .")";
 
                     mysqli_query($connection, $insertNewSurveyQuestionsSql);
 
