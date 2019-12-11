@@ -397,8 +397,72 @@ for ($i=0; $i<count($title); $i++)
 
 
 
- 
+//////////////////////////////////////////////
+//////////////// TEMP SURVEY  TABLE /////////////////
+//////////////////////////////////////////////
+// if there's an old version of our table, then drop it:
+$sql = "DROP TABLE IF EXISTS temp_survey";
 
+// no data returned, we just test for true(success)/false(failure):
+if (mysqli_query($connection, $sql))
+{
+	echo "Dropped existing table: temp_survey<br>";
+}
+
+else
+{
+	die("Error checking for existing table: " . mysqli_error($connection));
+}
+
+//// make our table:
+//// notice that the username field is a PRIMARY KEY and so must be unique in each record
+$sql = "CREATE TABLE temp_survey (
+ id INT NOT NULL AUTO_INCREMENT,
+ survey_title VARCHAR(300), 
+ survey_answer VARCHAR(200), 
+ PRIMARY KEY(id))";
+//
+//// no data returned, we just test for true(success)/false(failure):
+if (mysqli_query($connection, $sql))
+{
+	echo "Table created successfully: temp_survey<br>";
+}
+
+else
+{
+	die("Error creating table: " . mysqli_error($connection));
+}
+////clear the array
+$survey_title =  $survey_answer  = array();
+// put some data in our table:
+// create an array variable for each field in the DB that we want to populate
+$survey_title [] = "How many games do you own"; $survey_answer[] = "6";
+$survey_title [] = "How many game console do you own"; $survey_answer[] = "2";
+$survey_title [] = "What is your favourite game"; $survey_answer[] = "God of War";
+$survey_title [] = "What is your favourite game genre"; $survey_answer[] = "sports";
+$survey_title [] = "What game do you hate"; $survey_answer[] = "need for speed";
+$survey_title [] = "What game are you most excited for"; $survey_answer[] = "gta 6";
+$survey_title [] = "What game are you least excited for"; $survey_answer[] = "nfl 19";
+$survey_title [] = "What is your favourite game of all time"; $survey_answer[] = "fifa 20";
+
+// loop through the arrays above and add rows to the table:
+for ($i=0; $i<count($survey_title); $i++)
+{
+	// create the SQL query to be executed
+ 	$sql = "INSERT INTO temp_survey (survey_title,survey_answer) VALUES ('$survey_title[$i]','$survey_answer[$i]')";
+
+	// run the above query '$sql' on our DB
+	// no data returned, we just test for true(success)/false(failure):
+	if (mysqli_query($connection, $sql))
+	{
+		echo "row inserted<br>";
+	}
+
+	else
+	{
+		die("Error inserting row: " . mysqli_error($connection));
+	}
+}
 
 
 //reset checking for foreign key checks
