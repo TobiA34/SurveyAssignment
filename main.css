@@ -377,7 +377,10 @@ img{
 }
 
 .text_area_form{
-    margin-left: 40%;
+    margin-left: 0%;
+     width: 50%;
+    margin-top: 20px;
+    height: 10%;
 }
 
  .number_input_container{
@@ -395,6 +398,7 @@ img{
 
  .number_input_form{
    margin-left: 40%;
+   padding: 40px;
  }
 
 .slider_container{
@@ -504,6 +508,13 @@ h3{
     width: 400px;
 }
 
+.survey_instructions{
+    font-size: 35px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
 .center_paragraph_box{
     height: 30px;
     margin-left: 25%;
@@ -575,6 +586,12 @@ h3{
     margin-left: 7%;
     margin-top: 10px;
     font-size: 20px;
+}
+.simple_survey_textfield {
+    width: 40%;
+    padding-top: 10px;
+     margin-left: 40%;
+    padding-bottom: 20px;
 }
 
 /*Custom SURVEY*/

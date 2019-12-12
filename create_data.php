@@ -445,6 +445,7 @@ $survey_title [] = "What game are you most excited for"; $survey_answer[] = "gta
 $survey_title [] = "What game are you least excited for"; $survey_answer[] = "nfl 19";
 $survey_title [] = "What is your favourite game of all time"; $survey_answer[] = "fifa 20";
 
+
 // loop through the arrays above and add rows to the table:
 for ($i=0; $i<count($survey_title); $i++)
 {

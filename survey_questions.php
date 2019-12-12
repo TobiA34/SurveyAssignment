@@ -108,14 +108,11 @@ if ($showQuestionForm)
     <input class="center_button"  name ="add_question" type="submit" value="Add Question">
 
     </form>
-    <a class="center_button" href="custom_survey_page.php">
-        <button id="back_page_button">Back</button>
-    </a>
-        <a class="center_button" href="custom_survey_page.php">
-        <button id="back_page_button">Show survey</button>
-    </a>
-    
-    </a>
+
+    <div>
+        <p class="survey_instructions"> - Type in the textfield to set questions then click the add questions button to keep adding questions to survey</p>
+        <p class="survey_instructions"> - Then when you have done adding questions then click the create button to create the survey</p>
+    </div>
 </div>
 
 
