@@ -150,3 +150,31 @@ if ($n > 0)
 			// show an unsuccessful update message:
 			$message = "Update failed<br>";
 		}
+
+
+   /*About */
+   To go the account page just click on the link About and on this page it will display information
+   about the page.
+
+   /*My Account */
+   To go on my account just click the link My account and this will take you to the my account page
+   Which will display your account information if you want to change your detail and this will show a form which you can change your detail.
+
+   /*Admin tools */
+   On admin tools as a admin you can click on the user image and this will take you to the page where you can manage the users.On admin tools as a admin you can click on the survey image and this will take you to the page where you can manage the surveys. On admin tools as a admin you can click on the response image and this will take you to the page where you can manage the response. On admin tools as a admin you can click on the graph image and this will take you to the page where you can manage the graph.
+
+   /*Design analysis tool */
+   On this page you can see the different survey page and the analysis and it also shows a conclusion.
+
+    /*Custom survey  */
+    On this page you can visit this page by clicking on the custom survey link and you can set a title and the survey type and you can answer the questions
+
+
+
+
+
+
+
+
+
+

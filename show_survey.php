@@ -35,27 +35,7 @@ $surveyQuestionTitleResult = mysqli_query($connection, $getSurveyQuestions);
 $surveyQuestionTitleRows = mysqli_num_rows($surveyQuestionTitleResult);
 
 
-function surveyTypeNumberfield(){
-    if ($survey_type_id = 1){
-        echo <<<_END
-        <input  class="center_form_box" type = number max="10" value=""> 
-_END;
-    }
-}
 
-// if ($survey_type_id = 2){
-//    echo <<<_END
-//        <input   class="center_form_box" type = text maxlength="200" value="">
-//_END;
-// }
-
-function surveyTypeSelect(){
-    if ($survey_type_id = 2){
-        echo <<<_END
-        <input  class="center_form_box" type = text maxlength="200" value=""> 
-_END;
-    }
-}
 
 
 
@@ -80,7 +60,7 @@ if ($surveyQuestionTitleResult->num_rows > 0){
                 <h2>$questionNumber</h2>
                 <form  action="show_survey.php" method="post">
                 <h2 class= "text_entry_title">$questionTitles</h2>
-                <input class="center_form_box" $type >
+                <input name ="question" class="center_form_box" $type >
 			</div>
         </div>
        
@@ -90,6 +70,8 @@ _END;
     }
 }
 
+
+
 echo <<<_END
     
     <input type = "submit" name="save_answer" class="center_button">
@@ -97,8 +79,94 @@ echo <<<_END
     </div>
 _END;
 
-//var_dump($surveyQuestionTitleRows);
+if(isset($_POST['save_answer'])) {
+
+    getSurveyID($dbhost, $dbuser, $dbpass, $dbname);
+    getUserID($dbhost, $dbuser, $dbpass, $dbname);
+    getQuestionID($dbhost, $dbuser, $dbpass, $dbname);
 
 
+}
+
+function getSurveyID($dbhost, $dbuser, $dbpass, $dbname){
+     $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    $survey_obj = unserialize($_SESSION['new_survey']);
+
+    // Get the survey id based on the title, store in a variable
+    $getSurveyId = "SELECT id FROM survey WHERE title = ". "'" . $survey_obj->getTitle() . "'";
+    $surveyIdResult = mysqli_query($connection, $getSurveyId);
+    $surveyIdRows = mysqli_num_rows($surveyIdResult);
+
+    if($surveyIdRows > 0) {
+
+        $surveyIdValue = mysqli_fetch_assoc($surveyIdResult);
+
+        $survey_fk_id = $surveyIdValue["id"];
+
+
+
+
+
+        for($i = 0; $i < count($surveyIdRows); $i++){
+
+ //                    var_dump($question);
+
+            $insertNewSurveyID = "INSERT INTO survey_answer(survey_id) VALUES('$survey_fk_id')";
+
+            mysqli_query($connection, $insertNewSurveyID);
+
+        }
+}
+
+function getUserID($dbhost, $dbuser, $dbpass, $dbname){
+        $survey_obj = unserialize($_SESSION['new_survey']);
+    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+        $userId = $_SESSION['username'];
+        $surveyIdResult = mysqli_query($connection, $getSurveyId);
+        $surveyIdRows = mysqli_num_rows($surveyIdResult);
+
+
+
+        mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+
+
+    }
+
+
+function getQuestionID($dbhost, $dbuser, $dbpass, $dbname)
+{
+    mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    $survey_obj = unserialize($_SESSION['new_survey']);
+    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    $getSurveyQuestionId = "SELECT id FROM survey_question WHERE title = " . "'" . $survey_obj->getTitle() . "'";
+    $surveyQuestionIdResult = mysqli_query($connection, $getSurveyQuestionId);
+    $surveyQuestionIdRows = mysqli_num_rows($surveyQuestionIdResult);
+    $questions = $survey_obj->getQuestions();
+
+    //Get question ID
+
+    //Insert into question ID
+    if ($surveyQuestionIdRows > 0) {
+
+        $surveyQuestionIdValue = mysqli_fetch_assoc($surveyQuestionIdResult);
+
+        $survey_fk_id = $surveyQuestionIdValue["id"];
+
+
+        for ($i = 0; $i < count($questions); $i++) {
+
+            //                    var_dump($question);
+
+            $insertNewSurveyID = "INSERT INTO survey_answer(survey_id) VALUES('$survey_fk_id')";
+
+            mysqli_query($connection, $insertNewSurveyID);
+
+        }
+
+    }
+  }
+}
 require_once "footer.php";
 ?>

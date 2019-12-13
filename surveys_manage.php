@@ -17,6 +17,7 @@ $title3 = "What is your favourite genre?";
 $title4 = "What is your favourite game that you own?";
 $title5 = "Are you a strong gammer?";
 
+$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 
 // checks the session variable named 'loggedInSkeleton'
@@ -52,9 +53,6 @@ else
 			  <br><br>
 			</div>
 			</div>
-
- 
-
 			<div class ="number_input_container">
 			<h2 class= "number_input_title"> How many game console do you own?</h2>
 			<div class = "number_input_form">
@@ -89,18 +87,21 @@ else
 			
 		    	<input class="center_button" type="submit" name="submit">
 			</form>
+			
+ 
 		</div>
 		</div>
 		
 </body>
 _END;
 
+	// sanitise values before being posted
 	if(isset($_POST['submit'])){
-		$consoleChoice = $_POST['consoleChoice'];
-		$rangeValue = $_POST['rangeValue'];
-		$numberValue = $_POST['numberValue'];
-		$textValue = $_POST['textValue'];
-		$textValue2 = $_POST['textValue2'];
+		$consoleChoice = sanitise($_POST['consoleChoice'],$connection);
+		$rangeValue = sanitise($_POST['rangeValue'],$connection);
+		$numberValue = sanitise($_POST['numberValue'],$connection,);
+		$textValue = sanitise($_POST['textValue'],$connection);
+		$textValue2 = sanitise($_POST['textValue2'],$connection,);
 
 
 		$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
@@ -111,22 +112,27 @@ _END;
 
 		}
 
+		// if it is the console choice then insert valuesinto the database
 		if($_POST['consoleChoice']){
 			$query = "INSERT INTO temp_survey(survey_title,survey_answer) VALUES ('$title1','$consoleChoice')";
 			mysqli_query($connection, $query);
 		}
-		 if($_POST['numberValue']){
+		// if it is the numberValue then insert into the database
+		if($_POST['numberValue']){
 			$query = "INSERT INTO temp_survey(survey_title,survey_answer) VALUES ('$title2','$numberValue')";
 			mysqli_query($connection, $query);
 		}
-		 if($_POST['textValue']){
+		// if it is the textValue then insert values into the database
+		if($_POST['textValue']){
 			$query = "INSERT INTO temp_survey(survey_title,survey_answer) VALUES ('$title3','$textValue')";
 			mysqli_query($connection, $query);
 		}
-		 if($_POST['textValue2']){
+		// if it is the textValue2 then insert values into the database
+		if($_POST['textValue2']){
 			$query = "INSERT INTO temp_survey(survey_title,survey_answer) VALUES ('$title4','$textValue2')";
 			mysqli_query($connection, $query);
 		}
+		// if it is the rangeValue then insert values into the database
 		if($_POST['rangeValue']){
 			$query = "INSERT INTO temp_survey(survey_title,survey_answer) VALUES ('$title5','$rangeValue')";
 			mysqli_query($connection, $query);

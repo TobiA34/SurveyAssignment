@@ -92,7 +92,7 @@ elseif (isset($_POST['username']))
 				echo <<<_END
 				<!DOCTYPE html>
 					<html lang="en">
-				_END;
+_END;
 
 			} else {
 				// no matching credentials found so redisplay the signin form with a failure message:

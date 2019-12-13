@@ -150,9 +150,9 @@ echo <<<_END
 </head>
 
 <body>
-<div id="container-for-sign-up">
- <div id="sign-up-form">
-<div id="border-for-sign-up-form">
+<div id="container_for_sign_up">
+ <div id="sign_up_form">
+<div id="border_for_sign_up_form">
 <form action="sign_up.php" method="post">
 
     Username: <input type="text" name="username" maxlength="16" class="textfield" value="$usernames" required> $usernames_val

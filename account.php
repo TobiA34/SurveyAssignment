@@ -43,6 +43,7 @@ else
 
 
 
+	// if the operation equals delete then delete
 	if((isset($_GET['operation']) && ($_GET['operation'])=="delete"))
 	{
 		delList($dbhost,$dbhost,$dbuser,$dbpass,$dbname,$_GET['id']);
@@ -53,11 +54,6 @@ else
 	if ($n > 0) {
 		// use the identifier to fetch one row as an associative array (elements named after columns):
 		$row = mysqli_fetch_assoc($result);
-		// display their profile data:
-		// echo "Username: {$row['username']}<br>";
-		// echo "Password: {$row['password']}<br>";
-		// echo "Email: {$row['email']}<br>";
-		//     echo "<br>You can <a href='account_set.php'>update</a> your account details here.<br>";
 
 		echo <<<_END
 <head>
@@ -90,40 +86,7 @@ _END;
 
 }
 
-//function delete
-//function delList($dbhost, $dbuser, $dbpass, $dbname,$field)
-//{
-//
-//	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-//
-//	if(!$connection)
-//	{
-//		die("Connection Failed: " . $mysqli_connect_error);
-//	}
-//
-//	mysqli_select_db($connection,$dbname);
-//
-//	$query = "DELETE FROM contents WHERE listID='$field'";
-//	$result = mysqli_query($connection,$query);
-//	if($result)
-//	{
-//		echo "deleted contents<br>";
-//	}
-//
-//	$query = "DELETE FROM lists WHERE id='$field' AND username'{$_SESSION['username']}'";
-//	$result = mysqli_query($connection,$query);
-//	if($result)
-//	{
-//		echo "delete-list<br>";
-//	}
-//	else
-//	{
-//		echo "List not deleted - error";
-//	}
-//
-//	mysqli_close($connection);
-//
-//}
+
 
 
 // finish off the HTML for this page:

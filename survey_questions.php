@@ -110,8 +110,8 @@ if ($showQuestionForm)
     </form>
 
     <div>
-        <p class="survey_instructions"> - Type in the textfield to set questions then click the add questions button to keep adding questions to survey</p>
-        <p class="survey_instructions"> - Then when you have done adding questions then click the create button to create the survey</p>
+        <p id="custom_survey_title">-type in the textfield to set questions then click the add questions button to keep adding questions to survey</p>
+        <p id="custom_survey_title">-type in the textfield to set questions then click the add questions button to keep adding questions to survey</p>
     </div>
 </div>
 
@@ -231,34 +231,6 @@ if(isset($_POST['create_survey'])) {
         }
     }
 }
-
-
-//function getID($dbhost, $dbuser, $dbpass, $dbname)
-//{
-//
-//   $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-//    if (!$connection)
-//    {
-//        die("Connection failed: " . $mysqli_connect_error);
-//    }
-//
-// // Check connection
-//    $query = "SELECT username FROM users WHERE username ='admin'";
-//    $result = mysqli_query($connection, $query);
-//    $n = mysqli_num_rows($result);
-//
-//if ($n > 0) {
-//    for ($i = 0; $i < $n; $i++) {
-//        // fetch one row as an associative array (elements named after columns):
-//        $row = mysqli_fetch_assoc($result);
-//        // set the size of the bar to plot based upon number of votes versus total votes
-//        echo "'{$row['username']}'";
-//    }
-//}
-//
-//}
-
-
 
 
 include_once "footer.php";

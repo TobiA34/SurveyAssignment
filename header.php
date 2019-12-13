@@ -51,20 +51,19 @@ _END;
 		echo <<<_END
 		<!DOCTYPE html>
 		<html>
-		<head>
-		<title>Survey Lion</title>
-		<link rel="stylesheet" href="main.css" type="text/css">
-		</head>
+			<head>
+				<title>Survey Lion</title>
+				<link rel="stylesheet" href="main.css" type="text/css">
+			</head>
 		<body>
-		<h1 id="website-name">Survey Lion</h1>
+			<h1 id="website-name">Survey Lion</h1>
 		<div class="nav">
-		<a href='about.php'>About</a> ||
-		<a href='account.php'>My Account</a> ||
-		<a href='surveys_manage.php'>My Surveys</a> ||
-		<a href='competitors.php'>Design and Analysis</a> ||
-		<a href="survey_List.php">Survey List</a> ||
-		<a href="custom_survey_page.php">Custom survey</a>||
-		<a href='sign_out.php'>Sign Out ({$_SESSION['username']})</a>
+			<a href='about.php'>About</a> ||
+			<a href='account.php'>My Account</a> ||
+			<a href='surveys_manage.php'>My Surveys</a> ||
+			<a href='competitors.php'>Design and Analysis</a> ||
+			<a href="custom_survey_page.php">Custom survey</a>||
+			<a href='sign_out.php'>Sign Out ({$_SESSION['username']})</a>
 		</div>
 _END;
 	}
@@ -83,10 +82,10 @@ echo <<<_END
  <body>
 <h1 id="website-name">Survey Lion</h1>
 <div class="nav">
- <a href='about.php'>About</a></li> ||
- <a href='sign_up.php'>Sign Up</a></li> ||
- <a href='sign_in.php'>Sign In</a></li> ||
- <a href='competitors.php'>Competitors</a></li>
+	 <a href='about.php'>About</a></li> ||
+	 <a href='sign_up.php'>Sign Up</a></li> ||
+	 <a href='sign_in.php'>Sign In</a></li> ||
+	 <a href='competitors.php'>Competitors</a></li>
 </div>
 _END;
 }

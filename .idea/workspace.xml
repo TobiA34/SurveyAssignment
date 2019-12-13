@@ -3,9 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="2c440354-071a-4374-ab19-f14a92f77c6b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graphs.php" beforeDir="false" afterPath="$PROJECT_DIR$/Graphs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/create_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_survey.php" beforeDir="false" afterPath="$PROJECT_DIR$/show_survey.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign_in.php" beforeDir="false" afterPath="$PROJECT_DIR$/sign_in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign_up.php" beforeDir="false" afterPath="$PROJECT_DIR$/sign_up.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/survey_questions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/surveys_manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/surveys_manage.php" afterDir="false" />
     </list>
@@ -95,7 +104,7 @@
       <workItem from="1575564383260" duration="10437000" />
       <workItem from="1575722139919" duration="17160000" />
       <workItem from="1575810638300" duration="26826000" />
-      <workItem from="1576008890677" duration="28255000" />
+      <workItem from="1576008890677" duration="48847000" />
     </task>
     <servers />
   </component>

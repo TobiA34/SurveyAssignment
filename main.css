@@ -164,17 +164,17 @@ input {
 
 /*STYLES FOR SIGN UP PAGE*/
 
-#container-for-sign-up{
+#container_for_sign_up{
     background-color: #181d23;
     height: 950px;
     padding: 10px;
 }
-#sign-up-form {
+#sign_up_form {
     padding-top: 0px;
     font-size: 35px;
     margin: 0 auto;
 }
-#border-for-sign-up-form{
+#border_for_sign_up_form{
     width: 900px;
     padding: 5px;
     background-color: yellow;
@@ -625,6 +625,26 @@ h3{
     padding:20px;
  }
 
+/*Graphs */
+
+#num_response_total{
+    color: white;
+    text-align: center;
+}
+
+#num_questions{
+    color: white;
+    text-align: center;
+}
+
+.table_colour{
+    background-color: black;
+}
+
+#chart_div{
+    margin-left: 30%;
+    padding: 30px;
+}
 
 /*FOOTER  STYLE*/
 #footer {
