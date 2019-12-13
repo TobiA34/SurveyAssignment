@@ -45,7 +45,7 @@ if (isset($_GET['download'])) {
         }
         fputcsv($output, $row);
     }
-    fclose($out);
+    fclose($output);
 
 }
 

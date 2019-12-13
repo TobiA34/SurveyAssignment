@@ -104,8 +104,7 @@ $usernames[] = 'timmy'; $passwords[] = 'secret95'; $emails[] = 'timmy@lassie.com
 for ($i=0; $i<count($usernames); $i++)
 {
 	// create the SQL query to be executed
-//    $sql = "INSERT INTO users (username, password, email , first_name,surname,telephone,dob,user_type) VALUES ('$usernames[$i]', '$passwords[$i]', '$emails[$i]', '$first_name[$i]', '$surname[$i]', '$telephone[$i]', '$dob[$i]')";
-		     $sql = "INSERT INTO users (username, password, email,first_name,surname,telephone,dob,user_type) VALUES ('$usernames[$i]', '$passwords[$i]', '$emails[$i]','$first_name[$i]','$surname[$i]','$telephone[$i]','$dob[$i]','$user_type[$i]')";
+ 		     $sql = "INSERT INTO users (username, password, email,first_name,surname,telephone,dob,user_type) VALUES ('$usernames[$i]', '$passwords[$i]', '$emails[$i]','$first_name[$i]','$surname[$i]','$telephone[$i]','$dob[$i]','$user_type[$i]')";
 
 	// run the above query '$sql' on our DB
     // no data returned, we just test for true(success)/false(failure):
@@ -171,8 +170,7 @@ $type [] = "select";
 for ($i=0; $i<count($type); $i++)
 {
 	// create the SQL query to be executed
-//    $sql = "INSERT INTO users (username, password, email , first_name,surname,telephone,dob,user_type) VALUES ('$usernames[$i]', '$passwords[$i]', '$emails[$i]', '$first_name[$i]', '$surname[$i]', '$telephone[$i]', '$dob[$i]')";
-	$sql = "INSERT INTO survey_type (type) VALUES ('$type[$i]')";
+ 	$sql = "INSERT INTO survey_type (type) VALUES ('$type[$i]')";
 
 	// run the above query '$sql' on our DB
 	// no data returned, we just test for true(success)/false(failure):
@@ -242,8 +240,7 @@ $title = $instructions = $username = array();
 for ($i=0; $i<count($title); $i++)
 {
 	// create the SQL query to be executed
-//    $sql = "INSERT INTO users (username, password, email , first_name,surname,telephone,dob,user_type) VALUES ('$usernames[$i]', '$passwords[$i]', '$emails[$i]', '$first_name[$i]', '$surname[$i]', '$telephone[$i]', '$dob[$i]')";
-	$sql = "INSERT INTO survey (username,title,instructions) VALUES ('$username[$i]','$title[$i]', '$instructions[$i]')";
+ 	$sql = "INSERT INTO survey (username,title,instructions) VALUES ('$username[$i]','$title[$i]', '$instructions[$i]')";
 
 	// run the above query '$sql' on our DB
 	// no data returned, we just test for true(success)/false(failure):
@@ -379,8 +376,7 @@ $answer  = array();
 for ($i=0; $i<count($title); $i++)
 {
 	// create the SQL query to be executed
-//    $sql = "INSERT INTO users (username, password, email , first_name,surname,telephone,dob,user_type) VALUES ('$usernames[$i]', '$passwords[$i]', '$emails[$i]', '$first_name[$i]', '$surname[$i]', '$telephone[$i]', '$dob[$i]')";
-	$sql = "INSERT INTO survey_answer (answer) VALUES ('$answer[$i]')";
+ 	$sql = "INSERT INTO survey_answer (answer) VALUES ('$answer[$i]')";
 
 	// run the above query '$sql' on our DB
 	// no data returned, we just test for true(success)/false(failure):

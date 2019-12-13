@@ -12,6 +12,7 @@ SETUP:
 
 
 
+
 DOCUMENTATION:
 ...
 
@@ -168,6 +169,8 @@ if ($n > 0)
 
     /*Custom survey  */
     On this page you can visit this page by clicking on the custom survey link and you can set a title and the survey type and you can answer the questions
+
+
 
 
 

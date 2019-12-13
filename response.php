@@ -2,6 +2,7 @@
 require_once "header.php";
 if (isset($_SESSION['loggedInSkeleton']) && ($_SESSION['username']=='admin')) {
 
+    //connection to the database
     $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
     if (!$connection) {
@@ -36,6 +37,7 @@ if (isset($_SESSION['loggedInSkeleton']) && ($_SESSION['username']=='admin')) {
     if ($n > 0) {
         for ($i = 0; $i < 1; $i++) {
             $row = mysqli_fetch_assoc($result);
+            // display so html
             echo <<<_END
             <table class="table_colour">
             <tr class="table_colour">
@@ -58,6 +60,7 @@ _END;
     if ($n2 > 0) {
         for ($i = 0; $i < 1; $i++) {
             $row2 = mysqli_fetch_assoc($result2);
+            // display some html
             echo <<<_END
             <table class="table_colour">
             <tr class="table_colour">
@@ -72,7 +75,9 @@ _END;
         }
     }
 
+    // simple query to get all columns out of the database
     $sql = "SELECT * FROM temp_survey";
+    // execute the query
     $result = mysqli_query($connection, $sql);
 
     echo <<<_END
@@ -102,23 +107,6 @@ _END;
         }
         echo "</tr>";
     }
-//    if ($n3 > 0) {
-//        for ($i = 0; $i < $n3; $i++) {
-//            $row3 = mysqli_fetch_assoc($result3);
-//            echo <<<_END
-//            <table>
-//            <tr>
-//            <th>Number of questions</th>
-//            </tr>
-//            <tr>
-//            <td id ="num_response_total">
-//            <tr><td>{$row['survey_title']}</td>
-//            </td>
-//            </tr>
-//            </table>
-//_END;
-//
-//        }
 
 
 }

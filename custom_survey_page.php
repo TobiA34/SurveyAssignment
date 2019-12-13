@@ -72,13 +72,19 @@ _END;
 
   if(!empty($_POST["saveInput"])) {
 
+      // create the survey the new survey object
       $surveyObject = new SurveyObject();
+      // get the method from survey object set title method pass the post method survey title
       $surveyObject->setTitle($_POST['survey_title']);
+      // get the method from survey object set instructions method pass the post method survey instructions
       $surveyObject->setInstructions($_POST['survey_instructions']);
+      // get the method from survey type set survey type method pass the post method set question type
       $surveyObject->setSurveyType($_POST['question_type']);
 
+      // serialize the session new_survey
       $_SESSION["new_survey"] = serialize($surveyObject);
 
+      // go to the survey questions
       header('Location:survey_questions.php');
   }
 

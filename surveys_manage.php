@@ -11,6 +11,7 @@
 // execute the header script:
 require_once "header.php";
 
+// question title
 $title1 = "What is your favourite game console?";
 $title2 = "How many game console do you own?";
 $title3 = "What is your favourite genre?";

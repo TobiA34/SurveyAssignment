@@ -181,13 +181,15 @@ if(isset($_POST['create_survey'])) {
 
             // Get the first row so we can extract values
             $row = mysqli_fetch_assoc($result);
+            // store the survey type id in the foreign key
             $survey_type_fk_id = $row["survey_type_id"];
+            // get the title from the object and store it in the survey title
             $survey_title = $survey_obj->getTitle();
+            //get the instructions from the object and store it in the survey instructions
             $survey_instructions = $survey_obj->getInstructions();
             $userId = $_SESSION['username'];
 
-            // INSERT INTO survey(`title`, `instructions`, `survey_type_id`, `user_id`) VALUES ("Adsda","Make sure you fill in the database",1,"mandyb")
-
+           // store the insert statement into the variable
            $insertNewSuveryQuerySql = "INSERT INTO survey(title, instructions, survey_type_id, user_id) VALUES (" . "'" . $survey_title . "'," . "'" . $survey_instructions . "'," . $survey_type_fk_id . ",'" . $userId . "')";
 
             // Execute the insert into the survey
@@ -196,27 +198,32 @@ if(isset($_POST['create_survey'])) {
 
            // Get the survey id based on the title, store in a variable
             $getSurveyId = "SELECT id FROM survey WHERE title = " . "'" . $survey_obj->getTitle() ."'";
+            // execute the query
             $surveyIdResult = mysqli_query($connection, $getSurveyId);
+            // get the number of rows
             $surveyIdRows = mysqli_num_rows($surveyIdResult);
 
+            //check to see if the number of rows is greater than 0
             if($surveyIdRows > 0) {
 
+                // fetch the values from the array
                 $surveyIdValue = mysqli_fetch_assoc($surveyIdResult);
 
                 $survey_fk_id = $surveyIdValue["id"];
 
-                var_dump($survey_fk_id);
 
                 // Create the query to insert
 
                 // INSERT INTO `survey_question`(`title`, `survey_id`) VALUES ("ddsas", 2)
 
+                // get survey object from get questions
                 $questions = $survey_obj->getQuestions();
 
+                // loop through the number of questions
                 for($i = 0; $i < count($questions); $i++){
 
+                    //get the question at the index
                     $question = $questions[$i];
-//                    var_dump($question);
 
                      $insertNewSurveyQuestionsSql = "INSERT INTO survey_question(title,survey_id) VALUES(" . "'" . $question . "'," . $survey_fk_id .")";
 
@@ -224,6 +231,7 @@ if(isset($_POST['create_survey'])) {
 
                 }
 
+                // go to show_survey page
                 header('Location:show_survey.php');
 
 
